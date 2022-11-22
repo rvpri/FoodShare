@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        style="@style/headings"
+        android:text="Donate Food Details"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:id="@+id/txtview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Item(s)"
+        android:textSize="17sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <EditText
+        android:id="@+id/food"
+        android:layout_width="330dp"
+        android:layout_marginStart="20dp"
+        android:layout_height="wrap_content"
+        tools:ignore="LabelFor,TextFields" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preferred Date"
+        android:textSize="17sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="330dp"
+        android:layout_marginStart="20dp"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_date"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preferred Time"
+        android:textSize="17sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="330dp"
+        android:layout_marginStart="20dp"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_time"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Serves around"
+        android:textSize="17sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/serves"
+        android:layout_width="330dp"
+        android:layout_marginStart="20dp"
+        android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="I assure that food quality and hygiene has been maintained"
+        android:textColor="@android:color/darker_gray"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnInsert"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Confirm Donation"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/white"
+        android:background="@drawable/background"
+        android:layout_marginTop="30dp"/>
+
+
+</LinearLayout>
+

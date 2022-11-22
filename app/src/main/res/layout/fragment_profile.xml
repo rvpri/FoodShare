@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/headings"
+        android:text="Update Profile"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp" />
+
+    <TextView
+        style="@style/txtview"
+        android:id="@+id/name1"
+        android:text="Name" />
+
+    <EditText
+        style="@style/AppFont"
+        android:hint="Username"
+        android:id="@+id/username"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="8dp"
+        android:inputType="textPersonName"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <TextView
+        style="@style/txtview"
+        android:id="@+id/name2"
+        android:text="Phone No"
+        android:layout_marginTop="20dp" />
+    
+    <EditText
+        style="@style/AppFont"
+        android:id="@+id/phoneno"
+        android:layout_marginTop="8dp"
+        android:inputType="phone"
+        android:layout_marginStart="55dp"
+        tools:ignore="Autofill,HardcodedText" />
+    <TextView
+        style="@style/txtview"
+        android:id="@+id/name3"
+        android:text="Password"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        style="@style/AppFont"
+        android:id="@+id/password"
+        android:layout_marginTop="8dp"
+        android:inputType="textVisiblePassword"
+        android:hint="Password"
+        android:layout_marginStart="55dp"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <TextView
+        style="@style/txtview"
+        android:id="@+id/name4"
+        android:text="Pickup Address"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        style="@style/AppFont"
+        android:id="@+id/Pickup_Address"
+        android:hint="Pickup_Address"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="55dp"
+        android:inputType="textPostalAddress"
+        tools:ignore="Autofill" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/updatedetails"
+        android:text="Update"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="57dp"
+        android:textColor="@color/white"
+        android:background="@drawable/background"/>
+
+
+
+</LinearLayout>
+

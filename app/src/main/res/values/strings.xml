@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">FoodShare</string>
+
+    <string name="email" />
+    <string name="login" />
+    <string name="create_an_account" />
+    <string name="create_account">Create account</string>
+    <string name="foodshare">FoodShare</string>
+    <string name="confirmpassword">ConfirmPassword</string>
+    <string name="signup">signup</string>
+    <string name="Pickup_Address" />
+    <string name="Update" />
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="phone_no">Phone No</string>
+
+    <string name="phoneno">phoneno</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="address">Address</string>
+    <string name="pickup_address">Pickup Address</string>
+
+
+</resources>

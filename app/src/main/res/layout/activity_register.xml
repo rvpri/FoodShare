@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/backg"
+    tools:context=".MainActivity">
+    <TextView
+        style="@style/headings"
+        android:text="Create Account"
+        android:layout_marginBottom="30dp" />
+    <EditText
+        android:id="@+id/username"
+        style="@style/AppFont"
+        android:hint="Name"
+        android:drawableStart="@drawable/ic_person"
+        android:paddingLeft="10dp"
+        android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/email"
+        style="@style/AppFont"
+        android:drawableStart="@drawable/ic_email"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="27sp"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+    <EditText
+        android:id="@+id/phone"
+        style="@style/AppFont"
+        android:drawableStart="@drawable/ic_phone"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="27sp"
+        android:hint="Phone No"
+        android:inputType="phone"
+        />
+    <EditText
+        android:id="@+id/password"
+        style="@style/AppFont"
+        android:drawableStart="@drawable/ic_lock"
+        android:layout_marginTop="27sp"
+        android:inputType="textPassword"
+        android:hint="Password" />
+    <EditText
+        android:id="@+id/confirmpassword"
+        style="@style/AppFont"
+        android:drawableStart="@drawable/ic_lock"
+        android:layout_marginTop="27sp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        style="@style/AppFont"
+        android:id="@+id/Pickup_Address"
+        android:layout_marginTop="27sp"
+        android:hint="Pickup Address"
+        android:drawableStart="@drawable/ic_location"
+        android:inputType="textPostalAddress" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/button"
+        android:text="signup"
+        android:layout_marginTop="30sp"
+        android:id="@+id/button1" />
+
+</LinearLayout>
