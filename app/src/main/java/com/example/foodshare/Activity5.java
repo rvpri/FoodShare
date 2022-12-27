@@ -19,7 +19,7 @@ public class Activity5 extends AppCompatActivity {
 
     TextView mailid;
     private String emailid;
-    AirplaneModeChangeReceiver airplaneModeChangeReceiver = new AirplaneModeChangeReceiver();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,16 +74,5 @@ public class Activity5 extends AppCompatActivity {
                     return true;
                 }
             };
-    @Override
-    protected void onStart() {
-        super.onStart();
-        IntentFilter filter = new IntentFilter(Intent.ACTION_AIRPLANE_MODE_CHANGED);
-        registerReceiver(airplaneModeChangeReceiver, filter);
-    }
 
-    @Override
-    protected void onStop() {
-        super.onStop();
-        unregisterReceiver(airplaneModeChangeReceiver);
-    }
 }

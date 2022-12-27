@@ -12,11 +12,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     EditText email,password;
-
     Button button1;
     TextView txtview;
     DBHelper db;
-    AirplaneModeChangeReceiver airplaneModeChangeReceiver = new AirplaneModeChangeReceiver();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
         button1.setOnClickListener(v -> {
             String pass=password.getText().toString();
             String mail=email.getText().toString();
-
 
             if( mail.equals("") || pass.equals("") )
                 Toast.makeText(MainActivity.this, "Please enter all the data..", Toast.LENGTH_SHORT).show();
@@ -58,18 +55,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent2);
         });
     }
-    @Override
-    protected void onStart() {
-        super.onStart();
-        IntentFilter filter = new IntentFilter(Intent.ACTION_AIRPLANE_MODE_CHANGED);
-        registerReceiver(airplaneModeChangeReceiver, filter);
-    }
 
-    @Override
-    protected void onStop() {
-        super.onStop();
-        unregisterReceiver(airplaneModeChangeReceiver);
-    }
 
 }
 

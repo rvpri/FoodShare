@@ -71,7 +71,6 @@ public class Donate extends AppCompatActivity {
 
         });
 
-
         Calendar cal = Calendar.getInstance();
         final int year = cal.get(Calendar.YEAR);
         final int month = cal.get(Calendar.MONTH);
@@ -116,8 +115,6 @@ public class Donate extends AppCompatActivity {
 
             timePickerDialog.updateTime(t1Hour, t1Minute);
             timePickerDialog.show();
-
-
         });
 
 
